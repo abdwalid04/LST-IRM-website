@@ -11,4 +11,4 @@ $(document).ready(function () {
         $('#disc').mouseleave(function (e) { 
             $(this).removeClass('show-more')
         });
-    });
+});
