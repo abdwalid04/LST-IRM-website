@@ -18,10 +18,10 @@ body {
     padding: 25px;
     overflow: hidden;
 }
-/* ul,
-li {
+ul.ulist,
+li.list {
     list-style-type: none;
-}  */
+}  
 a {
     text-decoration: none;
 }
@@ -360,117 +360,44 @@ a {
     margin-left: 920px;
     margin-top: 200px;
     cursor: pointer;
-    /* color: rgb(37, 71, 71); */
 }
 .leftarrow{
     position: absolute;
     cursor: pointer;
     margin-top: 200px;
     margin-left: -60px;
-    /* color: rgb(37, 71, 71); */
 }
 
-.minipages{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 90px;
-    font-size: 20px;
-    align-items: center;
-    cursor: pointer;
-    position: absolute;
-    
-}
+
 .prerequis{
     display: none;
 }
-#next1{
-    margin-top: 179px;
-    margin-left: 455px;
 
+.choix{
+    position: relative;
+    left: 130px;
+    top: 20px;;
+    font-size: 25px;
 }
-#next2{
-    margin-top: 250px;
-    margin-left: 455px;
+.choix label{
+    margin-right: 35px;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+    color: rgb(61, 202, 212);
+}
+.choix label:hover{
+    color: rgb(0, 0, 0);
+}
 
-}
-#next3{
-    margin-top: 201px;
-    margin-left: 455px;
-}
-#next4{
-    margin-top: 228px;
-    margin-left: 455px;
-}
-#next5{
-    margin-top: 272px;
-    margin-left: 455px;
-}
-#next6{
-    margin-top: 240px;
-    margin-left: 455px;
-}
-#next7{
-    margin-top: 169px;
-    margin-left: 455px;
-}
-#next8{
-    margin-top: 228px;
-    margin-left: 455px;
-}
-#next9{
-    margin-top: 272px;
-    margin-left: 455px;
-}
-#next10{
-    margin-top: 100px;
-    margin-left: 455px;
-}
-#next11{
-    margin-top: 191px;
-    margin-left: 505px;
-}
-#previous1{
-    margin-top: 338px;
-    margin-left: 455px;
-}
-#previous2{
-    margin-top: 284px;
-    margin-left: 455px;
-}
-#previous3{
-    margin-top: 137px;
-    margin-left: 455px;
-}
-#previous4{
-    margin-top: 230px;
-    margin-left: 455px;
-}
-#previous5{
-    margin-top: 257px;
-    margin-left: 455px;
-}
-#previous6{
-    margin-top: 257px;
-    margin-left: 455px;
-}
-#previous7{
-    margin-top: 284px;
-    margin-left: 455px;
-}
-#previous8{
-    margin-top: 257px;
-    margin-left: 455px;
-}
-#previous9{
-    margin-top: 230px;
-    margin-left: 455px;
-}
-#previous10{
-    margin-top: 191px;
-    margin-left: 405px;
-}
-#previous11{
-    margin-top: 212px;
-    margin-left: 455px;
+.choix [type=radio]{
+    display:none;
+} 
+  /* [type=radio]:checked ~ label { 
+	border-bottom: 2px solid #1d1d1d; 
+	background-color: red;
+ }  */
+ 
+#choix2,#choix3,#choix4,#choix5,#choix6,#choix7,#choix8,#choix9,#choix10{
+    display: none;
 }

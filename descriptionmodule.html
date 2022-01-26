@@ -131,29 +131,39 @@
 
     <div id="all">
     <h2 id="titre">DESCRIPTION MODULES</h2>
+    <div class="choix" id="choix1">
+        <input type="radio" name="tabgroup1" id="previous1" checked>
+        <label for="previous1">Objectifs</label>
+        <input type="radio" name="tabgroup1" id="next1">
+        <label for="next1">Pre-requis</label>
+    </div>
     <div id="module1" class="module">
+        
         <p class="nom">Traitement Numérique de l'Information Multimédia</p>
         <div id="objectif1">
             <p class="soustitre">OBJECTIFS DU MODULE</p>
             <p class="content">Ce module introduit les notions de bases en multimédia avec un point de vue traitement du signal ; en vue de la compréhension de la problématique scientifique et informatique liée aux applications de traitement de l'information multimédia.</p>
             <p class="content">Il présente les fondements scientifiques et technologiques indispensables pour le traitement numérique de l'information multimédia, en particulier l'image et le son. Les outils, algébriques, géométriques, de traitement du signal, seront appliqués lors de séances de travaux pratiques permettant ainsi d’illustrer les mécanismes principaux sur lesquels s'appuient l'analyse, le traitement d'images et de sons.</p>
-            <button id="next1" class="minipages">Next</button>
         </div>
         <div id="prerequis1" class="prerequis">
             <p class="soustitre">PRE-REQUIS PEDAGOGIQUES </p>
             <p class="content">Bases informatiques et mathématiques de niveau DEUST MIP/SMI (FST/FS)</p>
-            <button id="previous1" class="minipages">Previous</button>
         </div>
         <div id="rightarrow1" class="rightarrow" ><i class="fas fa-caret-right fa-7x" ></i></div>
 
     </div>
 
+    <div class="choix" id="choix2">
+        <input type="radio" name="tabgroup2" id="previous2" checked>
+        <label for="previous2">Objectifs</label>
+        <input type="radio" name="tabgroup2" id="next2">
+        <label for="next2">Pre-requis</label>
+    </div>
     <div id="module2" class="module">
         <p class="nom">Architecture et programmation réseaux</p>
         <div id="objectif2">
             <p class="soustitre">OBJECTIFS DU MODULE</p>
             <p class="content">Le but de ce cours est d'offrir pour l’étudiant une introduction aux réseaux informatiques, principalement les réseaux TCP/IP et le modèle OSI. Et par la suite l’étudiant doit maitriser les concepts des algorithmes de routage sur IP. Parallèlement au cours, les TD et TP permettront de se familiariser avec les problèmes d’implémentation de protocoles ainsi que la mise en pratique des concepts étudiés.</p>
-            <button id="next2" class="minipages">Next</button>
         </div>
         <div id="prerequis2" class="prerequis">
             <p class="soustitre">PRE-REQUIS PEDAGOGIQUES </p>
@@ -162,10 +172,15 @@
                 <li class="content">Bases mathématiques et informatique DEUST MIP et/ou DEUG SMI</li>
                 <li class="content">Traitement numérique de l'information multimédia - TNIM</li>
             </ul>
-            <button id="previous2" class="minipages">Previous</button>
         </div>
         <div id="rightarrow2" class="rightarrow" ><i class="fas fa-caret-right fa-7x" ></i></div>
         <div id="leftarrow2" class="leftarrow" ><i class="fas fa-caret-left fa-7x" ></i></div>
+    </div>
+    <div class="choix" id="choix3">
+        <input type="radio" name="tabgroup3" id="previous3" checked>
+        <label for="previous3">Objectifs</label>
+        <input type="radio" name="tabgroup3" id="next3">
+        <label for="next3">Pre-requis</label>
     </div>
     <div id="module3" class="module">
         <p class="nom">Théorie de l’Information</p>
@@ -173,9 +188,6 @@
             <p class="soustitre">OBJECTIFS DU MODULE</p>
             <p class="content">La théorie de l'information, sans précision, est le nom usuel désignant la théorie de l'information de Shannon, qui est une théorie probabiliste permettant de quantifier le contenu moyen en information d'un ensemble de messages, dont le codage informatique satisfait une distribution statistique précise. Ce domaine trouve son origine scientifique avec Claude Shannon qui en est le père fondateur avec son article A Mathematical Theory of Communication publié en 1948.</p>
             <p class="content">Parmi les branches importantes de la théorie de l'information de Shannon, on peut citer :</p>
-            <button id="next3" class="minipages">Next</button>
-        </div>
-        <div id="prerequis3" class="prerequis">
             <ul>
                 <li class="content">le codage de l'information ;</li>
                 <li class="content">la mesure quantitative de redondance d'un texte ;</li>
@@ -183,19 +195,26 @@
                 <li class="content">la cryptographie.</li>
             </ul>
             <p class="content">Dans un sens plus général, une théorie de l'information est une théorie visant à quantifier et qualifier la notion de contenu en information présent dans un ensemble de données. À ce titre, il existe une autre théorie de l'information : la théorie algorithmique de l'information, créée par Kolmogorov, Solomonoff et Chaitin au début des années 1960.</p>
+        </div>
+        <div id="prerequis3" class="prerequis">
+           
             <p class="soustitre">PRE-REQUIS PEDAGOGIQUES </p>
             <p class="content">Bases informatiques et mathématiques de niveau DEUST MIP/SMI (FST/FS)</p>
-            <button id="previous3" class="minipages">Previous</button>
         </div>
         <div id="rightarrow3" class="rightarrow" ><i class="fas fa-caret-right fa-7x" ></i></div>
         <div id="leftarrow3" class="leftarrow" ><i class="fas fa-caret-left fa-7x" ></i></div>
+    </div>
+    <div class="choix" id="choix4">
+        <input type="radio" name="tabgroup4" id="previous4" checked>
+        <label for="previous4">Objectifs</label>
+        <input type="radio" name="tabgroup4" id="next4">
+        <label for="next4">Pre-requis</label>
     </div>
     <div id="module4" class="module">
         <p class="nom">Technologie Web pour le Multimédia</p>
         <div id="objectif4">
             <p class="soustitre">OBJECTIFS DU MODULE</p>
             <p class="content">L’objectif du module est de faire acquérir les connaissances et les techniques nécessaires pour le développement d’applications multimédia sur le web. En fait, La conception et la création de pages web conviviales incluant des objets multimédia à l’aide des technologies Html5 et CSS3. Ensuite, L'insertion de script clients à l’aide de JavaScript et JQuery. Enfin, l’utilisation d’un langage de développement web dynamique pour manipuler des données stockées au sein d’un SGBDR.</p>
-            <button id="next4" class="minipages">Next</button>
         </div>
         <div id="prerequis4" class="prerequis">
             <p class="soustitre">PRE-REQUIS PEDAGOGIQUES </p>
@@ -206,17 +225,21 @@
                 <li class="content">Systèmes d’Information et Base de données (tronc commun MIP)</li>
                 <li class="content">Traitement Numérique de l'Information Multimédia – TNIM</li>
             </ul>
-            <button id="previous4" class="minipages">Previous</button>
         </div>
         <div id="rightarrow4" class="rightarrow" ><i class="fas fa-caret-right fa-7x" ></i></div>
         <div id="leftarrow4" class="leftarrow" ><i class="fas fa-caret-left fa-7x" ></i></div>
+    </div>
+    <div class="choix" id="choix5">
+        <input type="radio" name="tabgroup5" id="previous5" checked>
+        <label for="previous5">Objectifs</label>
+        <input type="radio" name="tabgroup5" id="next5">
+        <label for="next5">Pre-requis</label>
     </div>
     <div id="module5" class="module">
         <p class="nom">Base de Données Multimédia</p>
         <div id="objectif5">
             <p class="soustitre">OBJECTIFS DU MODULE</p>
             <p class="content">L’objectif de ce module vise à ce que l’étudiant doit premièrement connaître les techniques de stockage et de recherche d’objets multimédia dans un système de gestion de base de données. Ensuite il doit être capable de créer une base de données multimédia et d'en extraire les données. Pour les travaux pratiques, le SGBDR choisi est Oracle multimédia.</p>
-            <button id="next5" class="minipages">Next</button>
         </div>
         <div id="prerequis5" class="prerequis">
             <p class="soustitre">PRE-REQUIS PEDAGOGIQUES </p>
@@ -226,10 +249,15 @@
                 <li class="content">Traitement numérique de l'information multimédia - TNIM</li>
                 <li class="content">Programmation multimédia mobile – PMM</li>
             </ul>
-            <button id="previous5" class="minipages">Previous</button>
         </div>
         <div id="rightarrow5" class="rightarrow" ><i class="fas fa-caret-right fa-7x" ></i></div>
         <div id="leftarrow5" class="leftarrow" ><i class="fas fa-caret-left fa-7x" ></i></div>
+    </div>
+    <div class="choix" id="choix6">
+        <input type="radio" name="tabgroup6" id="previous6" checked>
+        <label for="previous6">Objectifs</label>
+        <input type="radio" name="tabgroup6" id="next6">
+        <label for="next6">Pre-requis</label>
     </div>
     <div id="module6" class="module">
         <p class="nom">Conduite de projets Multimédias</p>
@@ -240,7 +268,6 @@
                 <li class="content">Se familiariser avec les méthodologies et les pratiques permettant de mener à bien un projet multimédia de qualité dans le temps et le budget impartis.</li>
                 <li class="content">Maîtriser les outils de gestion de projets multimédias.</li>
             </ul>
-            <button id="next6" class="minipages">Next</button>
         </div>
         <div id="prerequis6" class="prerequis">
             <p class="soustitre">PRE-REQUIS PEDAGOGIQUES </p>
@@ -250,10 +277,15 @@
                 <li class="content">Technologie web pour le multimédia</li>
                 <li class="content">Traitement numérique de l'information multimédia</li>
             </ul>
-            <button id="previous6" class="minipages">Previous</button>
         </div>
         <div id="rightarrow6" class="rightarrow" ><i class="fas fa-caret-right fa-7x" ></i></div>
         <div id="leftarrow6" class="leftarrow" ><i class="fas fa-caret-left fa-7x" ></i></div>
+    </div>
+    <div class="choix" id="choix7">
+        <input type="radio" name="tabgroup7" id="previous7" checked>
+        <label for="previous7">Objectifs</label>
+        <input type="radio" name="tabgroup7" id="next7">
+        <label for="next7">Pre-requis</label>
     </div>
     <div id="module7" class="module">
         <p class="nom">Transmission de données multimédia</p>
@@ -265,7 +297,6 @@
                 <li class="content">Comprendre les technologies de compression d'image, de vidéo, d'audio et de parole.</li>
                 <li class="content">Comprendre les mécanismes assurant la qualité de service pour les applications multimédias</li>
             </ul>
-            <button id="next7" class="minipages">Next</button>
         </div>
         <div id="prerequis7" class="prerequis">
             <p class="soustitre">PRE-REQUIS PEDAGOGIQUES </p>
@@ -274,17 +305,21 @@
                 <li class="content">Traitement numérique de l'information multimédia</li>
                 <li class="content">Architecture et programmation réseau</li>
             </ul>
-            <button id="previous7" class="minipages">Previous</button>
         </div>
         <div id="rightarrow7" class="rightarrow" ><i class="fas fa-caret-right fa-7x" ></i></div>
         <div id="leftarrow7" class="leftarrow" ><i class="fas fa-caret-left fa-7x" ></i></div>
+    </div>
+    <div class="choix" id="choix8">
+        <input type="radio" name="tabgroup8" id="previous8" checked>
+        <label for="previous8">Objectifs</label>
+        <input type="radio" name="tabgroup8" id="next8">
+        <label for="next8">Pre-requis</label>
     </div>
     <div id="module8" class="module">
         <p class="nom">Multimédia sur IP et Qualité de services</p>
         <div id="objectif8">
             <p class="soustitre">OBJECTIFS DU MODULE</p>
             <p class="content">Le but de ce cours est de présenter à l’étudiant les différents protocoles de transport et de gestion des multimédias sur IP ainsi que les concepts de la qualité de services et voir l’impact des flux multimédias sur la QoS. Et par la suite l’étudiant doit maitriser les concepts utilisés pour le transfert du multimédia sur IP. Parallèlement au cours, les TD et TP permettront de se familiariser avec les problèmes d’implémentation de protocoles ainsi que la mise en pratique des concepts étudiés.</p>
-            <button id="next8" class="minipages">Next</button>
         </div>
         <div id="prerequis8" class="prerequis">
             <p class="soustitre">PRE-REQUIS PEDAGOGIQUES </p>
@@ -294,17 +329,21 @@
                 <li class="content">Traitement numérique de l'information multimédia - TNIM</li>
                 <li class="content">Programmation multimédia mobile – PMM</li>
             </ul>
-            <button id="previous8" class="minipages">Previous</button>
         </div>
         <div id="rightarrow8" class="rightarrow" ><i class="fas fa-caret-right fa-7x" ></i></div>
         <div id="leftarrow8" class="leftarrow" ><i class="fas fa-caret-left fa-7x" ></i></div>
+    </div>
+    <div class="choix" id="choix9">
+        <input type="radio" name="tabgroup9" id="previous9" checked>
+        <label for="previous9">Objectifs</label>
+        <input type="radio" name="tabgroup9" id="next9">
+        <label for="next9">Pre-requis</label>
     </div>
     <div id="module9" class="module">
         <p class="nom">Programmation Multimédia Mobile</p>
         <div id="objectif9">
             <p class="soustitre">OBJECTIFS DU MODULE</p>
             <p class="content">L’objectif du module est de faire acquérir les connaissances et les techniques nécessaires pour le développement d’applications multimédia sur une plateforme mobile. Le type d’application traitée est celui manipulant des objets multimédia. La technologie mobile utilisée est celle liée à la plateforme Java Android.</p>
-            <button id="next9" class="minipages">Next</button>
         </div>
         <div id="prerequis9" class="prerequis">
             <p class="soustitre">PRE-REQUIS PEDAGOGIQUES </p>
@@ -315,10 +354,25 @@
                 <li class="content">Systèmes d’Information et Base de données (tronc commun MIP)</li>
                 <li class="content">Traitement Numérique de l'Information Multimédia - TNIM</li>
             </ul>
-            <button id="previous9" class="minipages">Previous</button>
         </div>
         <div id="rightarrow9" class="rightarrow" ><i class="fas fa-caret-right fa-7x" ></i></div>
         <div id="leftarrow9" class="leftarrow" ><i class="fas fa-caret-left fa-7x" ></i></div>
+    </div>
+    <div class="choix" id="choix10">
+        <input type="radio" name="tabgroup10" id="next10" checked>
+        <label for="next10">Objectifs</label>
+        <input type="radio" name="tabgroup10" id="next11">
+        <label for="next11">Durée</label>
+        <input type="radio" name="tabgroup10" id="next12" >
+        <label for="next12">Lieu</label>
+        <input type="radio" name="tabgroup10" id="next13">
+        <label for="next13">Encadrement</label>
+        <input type="radio" name="tabgroup10" id="next14" >
+        <label for="next14">Evaluation</label>
+        <input type="radio" name="tabgroup10" id="next15">
+        <label for="next15">Validation</label>
+        
+
     </div>
     <div id="module10" class="module">
         <p class="nom">PROJET DE FIN D’ETUDES</p>
@@ -326,24 +380,26 @@
             <p class="soustitre">OBJECTIFS DU PFE</p>
             <p class="content">Le projet de fin d'études a un double but, il doit d'une part permettre à l’étudiant d'acquérir une expérience de gestion de projet par la pratique, et d'autre part lui offrir l'occasion de se constituer une carte de visite.</p>
             <p class="content">Le travail à effectuer répond à un besoin industriel exprimé par un professionnel qui assure un co-tutorat avec un enseignant universitaire ou bien correspond aux attentes d’une thématique, en développement dans le laboratoire attaché au département informatique, et qui sera encadré par un enseignant du département. </p>            
-            <p class="soustitre">DUREE DU PFE </p>
+        </div>
+        <div id="duree" class="prerequis">
+            <p class="soustitre" >DUREE DU PFE </p>
             <p class="content">La moitié du semestre S6 de la filière LST_IRM est consacrée entièrement au projet de fin d’études. </p>
-            <button id="next10" class="minipages">Next</button>
         </div>
         <div id="prerequis10" class="prerequis">
             <p class="soustitre">LIEU </p>
             <p class="content">Le projet peut être réalisé dans l’établissement d’attache de la filière ou dans une entreprise privée, publique ou semi-public, dans une administration etc..</p>
+        </div>
+        <div id="encadrement" class="prerequis">
             <p class="soustitre">ENCADREMENT DU PFE</p>
             <p class="content">Chaque stagiaire est encadré dans l’institution d’accueil par un professionnel qui assure un co-tutorat, et dans la Faculté par un enseignant du département informatique qui assure son encadrement, à qui il adresse un compte rendu hebdomadaire d'avancement de son travail.</p>
-            <button id="previous10" class="minipages">Previous</button>
-            <button id="next11" class="minipages">Next</button>
         </div>
         <div id="prerequis11" class="prerequis">
             <p class="soustitre">MODALITES D’EVALUATION</p>
             <p class="content">Le projet de fin d'études est validé par la rédaction d'un mémoire et d'une soutenance devant un jury composé d'enseignants universitaires et/ou d'industriels. </p>
+        </div>
+        <div id="valid" class="prerequis">
             <p class="soustitre">MODALITES DE VALIDATION</p>
             <p class="content">Le module PFE est validé si l’étudiant obtient une note finale, après soutenance, supérieure ou égale à 12/20.</p>
-            <button id="previous11" class="minipages">Previous</button>
         </div>
         <div id="leftarrow10" class="leftarrow" ><i class="fas fa-caret-left fa-7x" ></i></div>
     </div>

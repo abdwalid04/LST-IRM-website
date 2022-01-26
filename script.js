@@ -33,6 +33,9 @@ var pre9=document.getElementById("prerequis9");
 var obj10=document.getElementById("objectif10");
 var pre10=document.getElementById("prerequis10");
 var pre11=document.getElementById("prerequis11");
+var dur=document.getElementById("duree");
+var enc=document.getElementById("encadrement");
+var val=document.getElementById("valid");
 var ra1=document.getElementById("rightarrow1");
 var ra2=document.getElementById("rightarrow2")
 var ra3=document.getElementById("rightarrow3");
@@ -72,6 +75,10 @@ var n8=document.getElementById("next8");
 var n9=document.getElementById("next9");
 var n10=document.getElementById("next10");
 var n11=document.getElementById("next11");
+var n12=document.getElementById("next12");
+var n13=document.getElementById("next13");
+var n14=document.getElementById("next14");
+var n15=document.getElementById("next15");
 var p1=document.getElementById("previous1");
 var p2=document.getElementById("previous2");
 var p3=document.getElementById("previous3");
@@ -81,85 +88,132 @@ var p6=document.getElementById("previous6");
 var p7=document.getElementById("previous7");
 var p8=document.getElementById("previous8");
 var p9=document.getElementById("previous9");
-var p10=document.getElementById("previous10");
-var p11=document.getElementById("previous11");
+var c1=document.getElementById("choix1");
+var c2=document.getElementById("choix2");
+var c3=document.getElementById("choix3");
+var c4=document.getElementById("choix4");
+var c5=document.getElementById("choix5");
+var c6=document.getElementById("choix6");
+var c7=document.getElementById("choix7");
+var c8=document.getElementById("choix8");
+var c9=document.getElementById("choix9");
+var c10=document.getElementById("choix10");
+
 ra1.addEventListener("click",function(){
     m1.style.display="none";
     m2.style.display="flex";
+    c1.style.display="none";
+    c2.style.display="inline";
+    
  });
  la2.addEventListener("click",function(){
         m2.style.display="none";
         m1.style.display="flex";
+        c2.style.display="none";
+        c1.style.display="inline";
  });
  ra2.addEventListener("click",function(){
         m2.style.display="none";
         m3.style.display="flex";
+        c2.style.display="none";
+        c3.style.display="inline";
  });
  la3.addEventListener("click",function(){
         m3.style.display="none";
         m2.style.display="flex";
+        c3.style.display="none";
+        c2.style.display="inline";
+        
  });
  ra3.addEventListener("click",function(){
         m3.style.display="none";
         m4.style.display="flex";
+        c3.style.display="none";
+        c4.style.display="inline";
  });
  ra4.addEventListener("click",function(){
         m4.style.display="none";
         m5.style.display="flex";
+        c4.style.display="none";
+        c5.style.display="inline";
  });
 
  la4.addEventListener("click",function(){
         m4.style.display="none";
         m3.style.display="flex";
+        c4.style.display="none";
+        c3.style.display="inline";
  });
  ra5.addEventListener("click",function(){
         m5.style.display="none";
         m6.style.display="flex";
+        c5.style.display="none";
+        c6.style.display="inline";
  });
 
  la5.addEventListener("click",function(){
         m5.style.display="none";
         m4.style.display="flex";
+        c5.style.display="none";
+        c4.style.display="inline";
  });
  ra6.addEventListener("click",function(){
         m6.style.display="none";
         m7.style.display="flex";
+        c6.style.display="none";
+        c7.style.display="inline";
  });
 
  la6.addEventListener("click",function(){
         m6.style.display="none";
         m5.style.display="flex";
+        c6.style.display="none";
+        c5.style.display="inline";
  });
  ra7.addEventListener("click",function(){
         m7.style.display="none";
         m8.style.display="flex";
+        c7.style.display="none";
+        c8.style.display="inline";
  });
 
  la7.addEventListener("click",function(){
         m7.style.display="none";
         m6.style.display="flex";
+        c7.style.display="none";
+        c6.style.display="inline";
  });
  ra8.addEventListener("click",function(){
         m8.style.display="none";
         m9.style.display="flex";
+        c8.style.display="none";
+        c9.style.display="inline";
  });
 
  la8.addEventListener("click",function(){
         m8.style.display="none";
         m7.style.display="flex";
+        c8.style.display="none";
+        c7.style.display="inline";
  });
  ra9.addEventListener("click",function(){
         m9.style.display="none";
         m10.style.display="flex";
+        c9.style.display="none";
+        c10.style.display="inline";
  });
 
  la9.addEventListener("click",function(){
         m9.style.display="none";
         m8.style.display="flex";
+        c9.style.display="none";
+        c8.style.display="inline";
  });
  la10.addEventListener("click",function(){
         m10.style.display="none";
         m9.style.display="flex";
+        c10.style.display="none";
+        c9.style.display="inline";
  });
   n1.addEventListener("click",function(){
       obj1.style.display="none";
@@ -252,22 +306,57 @@ ra1.addEventListener("click",function(){
 
  });
  n10.addEventListener("click",function(){
-     obj10.style.display="none";
-     pre10.style.display="block";
-
- });
- p10.addEventListener("click",function(){
-     pre10.style.display="none";
      obj10.style.display="block";
+     pre10.style.display="none";
+     pre11.style.display="none";
+     dur.style.display="none";
+     valid.style.display="none";
+     enc.style.display="none";
+
 
  });
+
  n11.addEventListener("click",function(){
+    obj10.style.display="none";
+     pre10.style.display="none";
+     pre11.style.display="none";
+     dur.style.display="block";
+     valid.style.display="none";
+     enc.style.display="none";
+
+});
+n12.addEventListener("click",function(){
+    obj10.style.display="none";
+     pre10.style.display="block";
+     pre11.style.display="none";
+     dur.style.display="none";
+     valid.style.display="none";
+     enc.style.display="none";
+
+});
+n13.addEventListener("click",function(){
+    obj10.style.display="none";
+     pre10.style.display="none";
+     pre11.style.display="none";
+     dur.style.display="none";
+     valid.style.display="none";
+     enc.style.display="block";
+
+});
+n14.addEventListener("click",function(){
+    obj10.style.display="none";
      pre10.style.display="none";
      pre11.style.display="block";
-
- });
- p11.addEventListener("click",function(){
+     dur.style.display="none";
+     valid.style.display="none";
+     enc.style.display="none";
+});
+n15.addEventListener("click",function(){
+    obj10.style.display="none";
+     pre10.style.display="none";
      pre11.style.display="none";
-     pre10.style.display="block";
+     dur.style.display="none";
+     valid.style.display="block";
+     enc.style.display="none";
 
- });
+});
