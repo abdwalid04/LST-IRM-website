@@ -18,7 +18,7 @@ body {
     padding: 25px;
     overflow: hidden;
 }
-ul.ulist,
+ul,
 li.list {
     list-style-type: none;
 }  
@@ -387,16 +387,15 @@ a {
     color: rgb(61, 202, 212);
 }
 .choix label:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(73, 135, 185);
 }
 
 .choix [type=radio]{
     display:none;
 } 
-  /* [type=radio]:checked ~ label { 
-	border-bottom: 2px solid #1d1d1d; 
-	background-color: red;
- }  */
+   [type=radio]:checked + label { 
+	border-bottom: 2px solid rgb(73, 135, 185);
+ }  
  
 #choix2,#choix3,#choix4,#choix5,#choix6,#choix7,#choix8,#choix9,#choix10{
     display: none;
