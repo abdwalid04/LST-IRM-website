@@ -14,6 +14,7 @@ $(document).ready(function () {
 });
 (function ($) {
     var allPanels = $('.toc-tab-box .acc-content').hide();
+    $('#TNIM-desc').slideDown()
     var alltitle = $('#TNIM-title,#TWM-title,#TI-title,#BDM-title,#CPM-title,#TDM-title,#MIQS-title,#PMM-title,#PFE-title,#APR-title')
     $('#TNIM-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
@@ -126,9 +127,11 @@ $(document).ready(function () {
         }
     });
     var insdeDivs = $('.acc-content .quest .answer').hide();
+    var allanswer = $('.acc-content .quest .accordionItemHeading h4')
     $('.acc-content .quest .accordionItemHeading h4').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             insdeDivs.slideUp();
+            allanswer.removeClass('open')
             $(this).addClass('open');
             $(this).parent().parent().parent().parent().parent().parent().find('.answer').slideDown();
         } else {

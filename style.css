@@ -244,7 +244,7 @@ a {
     color: #fff;
 }
 .box {
-    width: 65%;
+    width: 70%;
     height: calc(100vh - 50px);
     margin-left: 20px;
     background-color: rgba(255, 255, 255, 0.2);  
@@ -308,7 +308,7 @@ a {
 .toc-tab-box h2.acc-title {
     display: flex;
     color: rgba(94,23,235,255);
-    padding: 20px 21.5px;
+    padding: 20px 25.3px;
     font-size: 25px;
     font-weight: 700;
     margin: 0px;
@@ -318,6 +318,11 @@ a {
     transition: all 0.5s ease;
     float: left;
     text-align: center;
+    transition: all 300ms ease;
+}
+.toc-tab-box h2.acc-title:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .toc-tab-box h2.acc-title.open {
@@ -333,6 +338,11 @@ a {
     font-size: 14px;
     position: relative;
     overflow: hidden;
+}
+
+.toc-tab-box .acc-content h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .accordionItemHeading .circle {
@@ -359,11 +369,15 @@ a {
 .accordionItemHeading h4 {
     color: #fff;
     font-size: 18px;
-    transition: all 0.5s ease;
+    transition: all 300ms ease;
     line-height: 24px;
     font-weight: 500;
     margin: 15px 0px;
     cursor: pointer;
+}
+
+.accordionItemHeading h4:hover {
+    text-shadow: #fff 1px 1px ;
 }
 
 .quest .answer {
