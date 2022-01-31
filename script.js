@@ -14,11 +14,15 @@ $(document).ready(function () {
 });
 (function ($) {
     var allPanels = $('.toc-tab-box .acc-content').hide();
+    var insdeDivs = $('.acc-content .quest .answer').hide();
+    var allanswer = $('.acc-content .quest .accordionItemHeading h4')
     $('#TNIM-desc').slideDown()
     var alltitle = $('#TNIM-title,#TWM-title,#TI-title,#BDM-title,#CPM-title,#TDM-title,#MIQS-title,#PMM-title,#PFE-title,#APR-title')
     $('#TNIM-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#TNIM-desc').slideDown();
@@ -30,6 +34,8 @@ $(document).ready(function () {
     $('#TWM-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#TWM-desc').slideDown();
@@ -41,6 +47,8 @@ $(document).ready(function () {
     $('#TI-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#TI-desc').slideDown();
@@ -52,6 +60,8 @@ $(document).ready(function () {
     $('#BDM-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#BDM-desc').slideDown();
@@ -63,6 +73,8 @@ $(document).ready(function () {
     $('#CPM-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#CPM-desc').slideDown();
@@ -74,6 +86,8 @@ $(document).ready(function () {
     $('#APR-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#APR-desc').slideDown();
@@ -85,6 +99,8 @@ $(document).ready(function () {
     $('#TDM-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#TDM-desc').slideDown();
@@ -96,6 +112,8 @@ $(document).ready(function () {
     $('#MIQS-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#MIQS-desc').slideDown();
@@ -107,6 +125,8 @@ $(document).ready(function () {
     $('#PMM-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#PMM-desc').slideDown();
@@ -118,6 +138,8 @@ $(document).ready(function () {
     $('#PFE-title').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             allPanels.slideUp();
+            insdeDivs.slideUp();
+            allanswer.removeClass('open')
             alltitle.removeClass('open');
             $(this).addClass('open');
             $('#PFE-desc').slideDown();
@@ -126,8 +148,6 @@ $(document).ready(function () {
             $(this).removeClass('open');
         }
     });
-    var insdeDivs = $('.acc-content .quest .answer').hide();
-    var allanswer = $('.acc-content .quest .accordionItemHeading h4')
     $('.acc-content .quest .accordionItemHeading h4').off().on('click', function (event) {
         if (!$(this).hasClass('open')) {
             insdeDivs.slideUp();
@@ -140,3 +160,30 @@ $(document).ready(function () {
         }
     });
 })(jQuery);
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
