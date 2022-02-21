@@ -1,10 +1,14 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/059ac7bb78.js" crossorigin="anonymous"></script>    
     <title>Document</title>
@@ -12,7 +16,7 @@
 <body>
     <header>
         <div class="signin-link">
-            <a href="#">
+            <a href="./profLogin.php">
                 <span>Sign In</span>
                 <i class="fas fa-sign-in-alt"></i>
             </a>
@@ -23,17 +27,17 @@
                 <a class="side_bar_bttn"><i class="fas fa-caret-left"></i></a>
             </div>
             <div class="logo_group">
-                <a href="#" class="logo_icon">
+                <a href="./index.php" class="logo_icon">
                     <img src="img/Navy Blue.png" alt="">
                 </a>
-                <a href="#" class="logo">
+                <a href="./index.php" class="logo">
                     <img src="img/Navy .png" alt="">
                 </a>
             </div>
             <div class="menu">
                 <ul>
                     <li class="list">
-                        <a href="index.html">
+                        <a href="./index.php">
                             <span class="icon">
                                 <i class="fab fa-accusoft"></i>
                             </span>
@@ -41,11 +45,11 @@
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#">
+                        <a href="./gestionDeNotes.php">
                             <span class="icon">
-                                <i class="far fa-user"></i>
+                                <i class="fa fa-bar-chart"></i>
                             </span>
-                            <span class="text">Profile</span>
+                            <span class="text">E-résultat</span>
                         </a>
                     </li>
                     <li class="list" id="disc">
@@ -58,7 +62,7 @@
                         <div class="extr-disc">
                             <ul>
                                 <li class="list" id="prof">
-                                    <a href="descriptionLST.html">
+                                    <a href="descriptionLST.php">
                                         <span class="icon">
                                             <i class="fas fa-users"></i>
                                         </span>
@@ -66,7 +70,7 @@
                                     </a>
                                 </li>
                                 <li class="list" id="modl">
-                                    <a href="descriptionmodule.html">
+                                    <a href="descriptionmodule.php">
                                         <span class="icon">
                                             <i class="fas fa-book"></i>
                                         </span>
@@ -77,12 +81,27 @@
                         </div>
                     </li>
                     <li class="list">
-                        <a href="contacts.html">
-                            <span class="icon">
-                                <i class="far fa-comments"></i>
-                            </span>
-                            <span class="text">Contacts</span>
-                        </a>
+                            <?php 
+                                if(!isset($_SESSION['chef'])){
+                                    echo '
+                                        <a href="contacts.php">
+                                            <span class="icon">
+                                                <i class="far fa-comments"></i>
+                                            </span>
+                                            <span class="text">Contacts</span>
+                                        </a>
+                                    ';
+                                }else{
+                                    echo '
+                                        <a href="reclamation.php">
+                                            <span class="icon">
+                                                <i class="far fa-comments"></i>
+                                            </span>
+                                            <span class="text">Reclamation</span>
+                                        </a>
+                                    ';
+                                }
+                            ?>
                     </li>
                 </ul>
             </div>
@@ -127,18 +146,3 @@
         </nav>
     </header>
     <div class="box">
-        <div class="page_text">
-            <h1>LST IRM</h1>
-            <p>
-                Le programme de la formation Licence en Sciences et Techniques IRM prépare à l’exercice du métier d’informaticien 
-                en techniques de développement et réseaux multimédia. 
-                <br>
-                Cette formation vise à fournir des connaissances en culture numérique qui implique l'usage des techniques de la société 
-                de l'information : l'informatique, le multimédia et l'internet, qui désormais irriguent tous les domaines économiques et sociaux. 
-
-            </p>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>

@@ -1,132 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Description Modules</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/059ac7bb78.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-    <header>
-        <div class="signin-link">
-            <a href="#">
-                <span>Sign In</span>
-                <i class="fas fa-sign-in-alt"></i>
-            </a>
-        </div>
-        <nav class="side_bar active">
-            <div class="top_bar">
-                <span></span>
-                <a class="side_bar_bttn"><i class="fas fa-caret-left"></i></a>
-            </div>
-            <div class="logo_group">
-                <a href="#" class="logo_icon">
-                    <img src="img/Navy Blue.png" alt="">
-                </a>
-                <a href="#" class="logo">
-                    <img src="img/Navy .png" alt="">
-                </a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li class="list">
-                        <a href="index.html">
-                            <span class="icon">
-                                <i class="fab fa-accusoft"></i>
-                            </span>
-                            <span class="text">Home</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <i class="far fa-user"></i>
-                            </span>
-                            <span class="text">Profile</span>
-                        </a>
-                    </li>
-                    <li class="list" id="disc">
-                        <a href="#">
-                            <span class="icon">
-                                <i class="far fa-clipboard"></i>
-                            </span>
-                            <span class="text">Description</span>
-                        </a>
-                        <div class="extr-disc">
-                            <ul>
-                                <li class="list" id="prof">
-                                    <a href="descriptionLST.html">
-                                        <span class="icon">
-                                            <i class="fas fa-users"></i>
-                                        </span>
-                                        <span class="text">LST</span>
-                                    </a>
-                                </li>
-                                <li class="list" id="modl">
-                                    <a href="descriptionmodule.html">
-                                        <span class="icon">
-                                            <i class="fas fa-book"></i>
-                                        </span>
-                                        <span class="text">Modules</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="list">
-                        <a href="contacts.html">
-                            <span class="icon">
-                                <i class="far fa-comments"></i>
-                            </span>
-                            <span class="text">Contacts</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="message_group">
-                <div class="messages">
-                    <ul>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <i class="fab fa-facebook-f"></i>
-                                </span>
-                                <span class="text">Facebook</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <i class="fab fa-twitter"></i>
-                                </span>
-                                <span class="text">Twitter</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </span>
-                                <span class="text">LinkedIn</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <i class="fab fa-github"></i>
-                                </span>
-                                <span class="text">Github</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="box">
+        
+<?php
+    require "./H & F/header.php";
+?>
+
+
+    <main>
         <div class="toc-tab-box">
 
             <h2 class="acc-title open" id="TNIM-title">TNIM</h2>
@@ -1058,7 +936,9 @@
             </div>
 
             </div>
-        </div>
-    <script src="script.js"></script>
-</body>
-</html>
+    </main>
+
+
+<?php
+    require "./H & F/footer.php";
+?>
