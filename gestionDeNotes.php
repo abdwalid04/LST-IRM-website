@@ -11,6 +11,15 @@
             <form action="resultats.php" method="POST">
                 <input type="text" name="cne" placeholder="CNE / code Massar">
                 <button type="submit" name="submit">Resultats</button>    
+                <?php
+                if (isset($_GET["error"])) {
+                    if ($_GET["error"]=="wrongCNE") {
+                        echo "<p class='err'>CNE n'existe pas</p>";
+                    } elseif($_GET["error"]=="emptyinput"){
+                        echo "<p class='err'>La case du CNE est obligatoire</p>";
+                    }
+                }
+                ?>
             </form>
         </div>
         <?php 

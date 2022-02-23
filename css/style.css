@@ -10,7 +10,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
     color: #fff;
     font-size: 16px;
-    background-image: url(../img/bkg1.jpg);
+    background-image: url(../img/wallpaperflare.com_wallpaper\ \(8\).jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ a {
     display: flex;
     align-items: center;
     position: relative;
-    color: #58595c;
+    color: #3f3f3f;
     transition: 0.4s ease-in-out;
     padding: 10px 0px;
     border-top-left-radius: 20px;
@@ -275,9 +275,9 @@ a {
 .toc-tab-box h2.acc-title {
     display: flex;
     color: rgba(94,23,235,255);
-    padding: 20px 23px;
+    padding: 20px 24px;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: bolder;
     margin: 0px;
     margin-bottom: 4px;
     cursor: pointer;
@@ -616,7 +616,7 @@ hr {
 .toast {
     margin-top:20px;
     text-align:left;
-    padding: 21px 0;
+    padding: 25px 0;
     background-color:#fff;
     border-radius:5px;
     width: 700px;
@@ -785,13 +785,13 @@ form.proflogin {
 
 form.proflogin *{
     font-family: 'Poppins',sans-serif;
-    color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
 }
 
 form.proflogin h1{
+    color: #fff;
     font-family: 'Pacifico', cursive;
     font-size: 34px;
     font-weight: 700;
@@ -800,6 +800,7 @@ form.proflogin h1{
 }
 
 form.proflogin label{
+    color: #fff;
     display: block;
     margin-top: 30px;
     font-size: 16px;
@@ -807,6 +808,7 @@ form.proflogin label{
 }
 
 form.proflogin input{
+    color: #fff;
     display: block;
     height: 50px;
     width: 100%;
@@ -848,6 +850,13 @@ form.proflogin button:hover {
 form.proflogin button:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
+}
+
+.err {
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: red;
 }
 
 .nbox-cont {
@@ -927,6 +936,32 @@ form.proflogin button:active {
 .noteboxe form button:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 17px;
+    width: 2px;
+    background-color: rgba(94,23,235,255);
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
 }
 
 ::-webkit-scrollbar {

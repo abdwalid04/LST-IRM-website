@@ -14,11 +14,11 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $stmt->bindParam(':message',$msg);
         $stmt->bindParam(':date',$date);
         $stmt->execute();
-        header('location:index.html');
+        header('location:index.php');
                 }
 
 }else{
-	header('location:index.html');
+	header('location:index.php');
 }
 
 ?>

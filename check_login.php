@@ -20,13 +20,17 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 			$stmt->execute();
 			$stmt->setFetchMode(PDO::FETCH_ASSOC);
 			$res=$stmt->fetchAll();
+			$module_nb=$stmt->rowCount();
 			foreach ($res as $row) {
 				$_SESSION['username']=$username;
+				if($username=='MoumkinMohamed'){
+					$_SESSION['chef']=$username;
+				}
+				$_SESSION['module_nb']=$module_nb;
 			}
-			$module_nb=$stmt->rowCount();
-             header('location:insertNotes.php?prof='.$username.'&nb_module='.$module_nb);
+            header('location:insertNotes.php?prof='.$username.'&nb_module='.$module_nb);
 		}else{
-			echo 'no exist';
+			header("location:profLogin.php?error=wrongLogin");
 		}
 
 	}

@@ -14,8 +14,18 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
 		if($module_id==9) return "Multimédia sur IP et Qualité de services";
 		if($module_id==9) return "Projet dE Fin D’etudes";
 	}
+	function deliberation($note){
+		if($note>=10) return 'V';
+		else
+		if($note>=5 && $note<10) return 'R';
+		else return 'NV';
+	}
 	if(isset($_POST['submit'])){
 		$cne=trim(stripslashes(htmlspecialchars($_POST['cne'])));
+		if(empty($cne)){
+			header("location:gestionDeNotes.php?error=emptyinput");
+			exit();
+		}
 		$stmt=$con->prepare('SELECT * FROM infoetudiant WHERE cne LIKE :cne ');
 		$stmt->bindParam(':cne',$cne);
 		$stmt->execute();
@@ -44,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
 							<tbody>
 				';
 			foreach($res as $key => $row){
-				$html.='<tr><td>'.moduleName($row['id_module']).'</td><td class="NoteD">'.$row['note'].'</td><td class="NoteD"></td></tr>';
+				$html.='<tr><td>'.moduleName($row['id_module']).'</td><td class="NoteD">'.$row['note'].'</td><td class="NoteD">'.deliberation($row['note']).'</td></tr>';
 			}
 			$html.='
 							</tbody>
@@ -55,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
 			$_SESSION['cne']=$cne;
 			header('location:gestionDeNotes.php');
 		}else{
-			echo 'no exist';
+			header("location:gestionDeNotes.php?error=wrongCNE");
 		}
 	}
 }else{

@@ -24,7 +24,7 @@
 
 
     <main>
-        <h1 id="noteaddh1">Lorem ipsum dolor sit.</h1>
+        <h1 id="noteaddh1">Gestion Des Notes</h1>
         <div class="nbox-cont">
             <?php 
                 if($_GET['nb_module']>1){

@@ -16,10 +16,22 @@
 <body>
     <header>
         <div class="signin-link">
-            <a href="./profLogin.php">
-                <span>Sign In</span>
-                <i class="fas fa-sign-in-alt"></i>
-            </a>
+            <?php if(isset($_SESSION['username'])){
+                echo'
+                    <a href="./proflogout.php">
+                        <span>Se déconnecter</span>
+                        <i class="fas fa-sign-in-alt"></i>
+                    </a>
+                ';
+            }else{
+                echo"
+                    <a href='./profLogin.php'>
+                        <span>S'identifier</span>
+                        <i class='fas fa-sign-in-alt'></i>
+                    </a>
+                    ";
+            }
+            ?>
         </div>
         <nav class="side_bar active">
             <div class="top_bar">
@@ -44,20 +56,34 @@
                             <span class="text">Home</span>
                         </a>
                     </li>
-                    <li class="list">
-                        <a href="./gestionDeNotes.php">
-                            <span class="icon">
-                                <i class="fa fa-bar-chart"></i>
-                            </span>
-                            <span class="text">E-résultat</span>
-                        </a>
-                    </li>
+                    <?php if(isset($_SESSION['username'])){
+                        echo'
+                            <li class="list">
+                                <a href="./insertNotes.php?prof='.$_SESSION['username'].'&nb_module='.$_SESSION['module_nb'].'">
+                                    <span class="icon">
+                                        <i class="fa fa-bar-chart"></i>
+                                    </span>
+                                    <span class="text">Inserer Les Notes</span>
+                                </a>
+                            </li>';
+                    }else{
+                        echo'
+                            <li class="list">
+                                <a href="./gestionDeNotes.php">
+                                    <span class="icon">
+                                        <i class="fa fa-bar-chart"></i>
+                                    </span>
+                                    <span class="text">E-résultat</span>
+                                </a>
+                            </li>';
+                    }
+                    ?>
                     <li class="list" id="disc">
                         <a href="#">
                             <span class="icon">
                                 <i class="far fa-clipboard"></i>
                             </span>
-                            <span class="text">Description</span>
+                            <span class="text">Description &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class="fas fa-caret-down"></i></span>
                         </a>
                         <div class="extr-disc">
                             <ul>
