@@ -81,13 +81,25 @@
                     $module_nom=$modules_noms[0];
                     echo'
                         <div class="noteboxe">
-                            <h2>Module : '.$module_nom.'</h2>
+                            <h3>Module : '.$module_nom.'</h3>
                             <form action="insertNotesTodb.php?id_module='.$id_module.'&nb_module='.$_GET['nb_module'].'&prof='.$_SESSION['username'].'" method="POST">';
                                 $stmt=$con->prepare('SELECT cne from infoetudiant');
                                 $stmt->execute();
                                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
                                 $res=$stmt->fetchAll();
-                                $html='<table><tr><th>CNE</th><th>Note</th></tr>';
+                                $html='<div class="tbl-header">
+                                            <table cellpadding="0" cellspacing="0" border="0" class="addnote">
+                                            <thead>
+                                                <tr>
+                                                <th>CNE</th>
+                                                <th>Note</th>
+                                                </tr>
+                                            </thead>
+                                            </table>
+                                        </div>
+                                        <div class="tbl-content">
+                                            <table cellpadding="0" cellspacing="0" border="0" class="addnote">
+                                                <tbody>';
                                 $i=1;
                                 foreach ($res as $row) {
                                     $stmt2=$con->prepare('SELECT note from notes WHERE cneEtudiant LIKE :cne AND id_module=:id_module');
@@ -97,16 +109,19 @@
                                     $stmt2->setFetchMode(PDO::FETCH_ASSOC);
                                     $res2=$stmt2->fetchAll();
                                     if($stmt2->rowCount()>0){
-                                    $html.='<tr><td>'.$row['cne'].'</td><td><input name='.$row['cne'].' type="float" value='.$res2[0]['note'].'></td></tr>';}
+                                    $html.='<tr><td class="tdcne_addnote">'.$row['cne'].'</td><td><input name='.$row['cne'].' type="float" value='.$res2[0]['note'].'></td></tr>';}
                                     else{
-                                        $html.='<tr><td>'.$row['cne'].'</td><td><input name='.$row['cne'].' type="float"></td></tr>';
+                                        $html.='<tr><td class="tdcne_addnote">'.$row['cne'].'</td><td><input name='.$row['cne'].' type="float"></td></tr>';
                                     }
                                     $i++;
                                 }
-                                $html.='</table>';
+                                $html.='
+                                                </tbody>
+                                            </table>
+                                        </div>';
                                 echo $html;
 
-                                echo'<button class="btnEnregistrer" type="submit" name="submit">Enregistrer</button>
+                                echo'<button type="submit" name="submit">Enregistrer</button>
                             </form>
                         </div>';
                 }

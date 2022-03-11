@@ -40,10 +40,10 @@
             </div>
             <div class="logo_group">
                 <a href="./index.php" class="logo_icon">
-                    <img src="img/Navy Blue.png" alt="">
+                    <img src="./img\Navy Blue Cybertech Company Logo (2).png" alt="">
                 </a>
                 <a href="./index.php" class="logo">
-                    <img src="img/Navy .png" alt="">
+                    <img src="./img/Navy .png" alt="">
                 </a>
             </div>
             <div class="menu">
@@ -53,7 +53,7 @@
                             <span class="icon">
                                 <i class="fab fa-accusoft"></i>
                             </span>
-                            <span class="text">Home</span>
+                            <span class="text">Accueil</span>
                         </a>
                     </li>
                     <?php if(isset($_SESSION['username'])){
@@ -123,7 +123,7 @@
                                             <span class="icon">
                                                 <i class="far fa-comments"></i>
                                             </span>
-                                            <span class="text">Reclamation</span>
+                                            <span class="text">Reclamations</span>
                                         </a>
                                     ';
                                 }

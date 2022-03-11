@@ -82,6 +82,7 @@ a {
 }
 .side_bar .logo_group .logo img {
     width: 200px;
+    margin-left: 10px;
 }
 .side_bar .logo_group .logo_icon img {
     width: 70px;
@@ -320,7 +321,7 @@ a {
     float: left;
     background: rgba(94,23,235,255);
     color: #fff;
-    padding-top: 2px;
+    padding-top: 3px;
     margin-right: 15px;
 }
 
@@ -348,7 +349,7 @@ a {
 }
 
 .quest .answer {
-    border-left: 1px solid #58ABDF;
+    border-left: 1px solid rgba(94,23,235,255);
     border-radius: 0px;
     margin-top: 5px;
     margin-left: 20px;
@@ -363,7 +364,7 @@ a {
 }
 
 .acc-content .quest {
-    margin: 5px 0px;
+    margin: 6px 0px;
 }
 
 .slideshow-container {
@@ -615,6 +616,7 @@ hr {
 
 .toast {
     margin-top:20px;
+    margin-left: 35px;
     text-align:left;
     padding: 25px 0;
     background-color:#fff;
@@ -736,7 +738,7 @@ table.addnote {
     background-color: rgba(255,255,255,0.3);
 }
 .tbl-content{
-    max-height: 350px;
+    max-height: 330px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin: 0 30px;

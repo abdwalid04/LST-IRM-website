@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 			$module_nb=$stmt->rowCount();
 			foreach ($res as $row) {
 				$_SESSION['username']=$username;
-				if($username=='MoumkinMohamed'){
+				if($username=='MoumkineNourddine'){
 					$_SESSION['chef']=$username;
 				}
 				$_SESSION['module_nb']=$module_nb;

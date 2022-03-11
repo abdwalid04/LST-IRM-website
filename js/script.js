@@ -3,6 +3,7 @@ $('.side_bar').mouseenter(function (e) {
 });
 $('.side_bar').mouseleave(function (e) { 
     $('.side_bar').toggleClass('active');
+    $('#disc').removeClass('show-more')
 });
 $('#disc').click(function (e) { 
     $(this).toggleClass('show-more')
